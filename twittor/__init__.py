@@ -1,5 +1,8 @@
 from crypt import methods
+import imp
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 from twittor.route import index, login
 
 def create_app():
